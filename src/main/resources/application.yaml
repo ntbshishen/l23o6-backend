@@ -1,0 +1,40 @@
+
+
+spring:
+  jackson:
+    serialization:
+      write-dates-as-timestamps: true
+
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/123route
+    username: postgres
+    password: 021126ntb
+
+  jpa:
+    show-sql: true
+    database: postgresql
+    hibernate:
+      ddl-auto: update
+
+sa-token:
+#   token-name: token
+#   # 30 days
+#   timeout: 2592000
+#   # no expiration
+#   activity-timeout: -1
+#   # multi login
+#   is-concurrent: true
+#   is-share: true
+  token-style: uuid
+  is-log: true
+
+alipay:
+  appId: 9021000122697394
+
+  appPrivateKey: MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCY5xKbVWcI3pFUM0o7BdZ0QksouS/cGOU4nrBBbaaEq/xD/Oql5XJ+pDIu4XjwK2YFCT+H01BwO57Xe6W+Il77UtIdEkZkPR85Xnkhe9DJuXZuxeZogyne/raqO4WkrZ7/3UCjKF23Y1qRF2nq6S+0j0kx/3QFd22Esu2ddFRwP9LE1HwHMqcNu9KgloOUyCp8+LNi/6ryM2lIfZuo6dtgzALiHILw2VKZ/eX8lhVVdZCl4QfYNk6eZmjajCo/4bUx7YDguXo8NLhJtMqi4sYtEQhhmBpYJT3uiHpmoZZhENQHBe3HaYtnm64z4r8xtyElRsFAO1xBGY6gAOI3ypqxAgMBAAECggEBAJGkYOPW2FrpbbKvXECWUezRjLfQlZbnm8dv2GGqKVfsXlEAYx38TS/2BNsE5+aU4AtiAMLG9LLDB40nePt/z8tC22LXmnc2hTxnEahkQL81Sms/VDYu4b5IDwRdx/HRc0cyn7QJ6iKZn5XeoIQi887gQQ8/zWq7lHU23gEB4sA7f+zufni/SwNmabF+LhaTVcFVQW/350TZqXiUfT1Sdju7qH2d5dvP6JKgAuyL0rHjIJf7zTvpUOAkCmaXub3uV+WopHK7Qal3hMWxR4OTqK70kqPZci66hEjz8vk39kWQx5XNxIrPQM57Syfkh7GxJXzacUAjal/65/qdPNIe83ECgYEA29v+Mcab8XqYKZZiEb7ldQ/kxdh/+zPqTUzlqsy7UMXiGLeztMMek+c07t8yQLs1L10p5xpCZGbpJwo8C3cnQT0s525JKThn+GzFflwSBMWj4WPJgs382sWcviCQx20HSslZ4zhUTKUA5LSJdgju8/N7boFuUxgaQ+BNDEs1vcUCgYEAsglxGBSk6nUYHadvSEUBqkoShKN2uqcbgoVvEElFiYBNpOM+mMT47w3jgRNhcmUWfs5d6VXsJxnsB2jvugrSkSvHx5jl/Jce3Hlq4NyeBql1VuNyKDUINiJHzjbr1R5vvAps7Cw+UUTKxPT8J9JvAFOKftT52ToZ3K2QLz6tw/0CgYBKRT/SmtA1O//JFLceXYlwCSV0PFXHi1scL9zp3O1uNNrTFMONTdi3iARWqWl1eohV7rfoDPPerPEYMhnkmaTWIg9YQuZOGXLt9filXf7sQ8O/sRDyshk34ke35pJh/A/ZkLlfy7iWh6sMl3xUNmJaYKcSxoB5a4v73/rHK2UFLQKBgQCQE6v+PNapFlGJzfH0nkOWt5L82/w9WPaeTbVvjJxFhhtPkMcbgmuhqa+uySxXEw99VywQpIQTsJqd9IHsIM3+xVtLX6TfILzM10Vy65bG9WQMCMxdVW1rwZoye6emNJdfqWA0UCmuQumFMmzNHTLPJMwzj88RyD8doyfH1AVzUQKBgFsP+7Y3reCuU5upgI4MUImoNOXjpxc60zYgXOX7DDA+pHRESKKg3OpMfVBNiZ8JhrzzcAF/d16xlgkdkWwOHFLqH5ggO2xopk07d8GTCAHN9QxkzLlvsWzbqzzWMezNjncCPJ7AB9DzB8ImXvDTxN8jeDW04k5axr8wj1S4JUXB
+
+  alipayPublicKey: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArAKbESSPTlhXuGaAm6ERGuGvzIk5FtZ7Fv+1NxWes/1K0ocLG8geld2iCKg/i4qhleFPLWaW2hllyCjY90XSi150QPNhKEgg1z4M0RX3CYa3KI+NP3lzUQIM6DXHypn0uCunNA56J8kovDcfuuNRMcZ9RnMUj3Pj2r9OdO2tuUBG9ICqvdVDSUXHYZLld1wUE5pjZaXiDEH5RpWylehTqUxBaoWlqPF9AzrdLPFlwFBbHQfyTP1cR9LgWoRq8lCHb5OsNlPXGKhevNA7l+5bpFC3OkgQnmbUHRPMvJfV0jq09V4OEOMqrdo/zkd9jcwEPSsCUbZF8NMYZ6QLmnlQAQIDAQAB
+
+  notifyUrl: http://ijtvz6.natappfree.ccc/alipay/notify
+
